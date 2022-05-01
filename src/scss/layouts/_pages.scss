@@ -43,6 +43,25 @@
         height: 100%;
         width: 100%;
         z-index: 0;
+
+        img{
+            display: none;
+
+            &.show{
+                display: block;
+            }
+        }   
+    }
+
+    .slide-description{
+        display: none;
+        transform: translateX(-50%);
+        
+        @include media-breakpoint-up(md) {
+            &.show{
+                display: block;
+            }
+        }
     }
 }
 // END home page
