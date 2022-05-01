@@ -5,16 +5,16 @@ body, html{
   padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 
 p{
 
 }
 
-a {
-  &:hover {
+a,
+a:hover {
     text-decoration: none;
-  }
 }
 
 *{

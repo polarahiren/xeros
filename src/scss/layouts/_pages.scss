@@ -5,4 +5,37 @@
         padding: 60px;
     }
 }
+
+.tabs-slide{
+    .tabs-slide-box{
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .sub-menu-title{
+        border-bottom: 1px solid transparent;
+
+        &.open{
+            border-color: $white;
+        }
+    }
+
+    .slide-sub-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .tabs-slide-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+}
 // END home page

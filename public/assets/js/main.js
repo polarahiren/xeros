@@ -11646,13 +11646,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-menu='true']").click(functi
   siblings.removeClass("open");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).toggleClass("open");
   var megamenu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data("menu-name");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(megamenu).toggleClass("show");
-
-  if (!isOpen) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").addClass("fixed-bg");
-  } else {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("fixed-bg");
-  }
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(megamenu).toggleClass("show"); // if(!isOpen){
+  //     $("body").addClass("fixed-bg");
+  // }else{
+  //     $("body").removeClass("fixed-bg");
+  // }
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".menu-bg-overlay, .menu-close").click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".custom-mega-menu").removeClass("show");

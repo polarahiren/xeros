@@ -73,11 +73,11 @@ $("[data-menu='true']").click(function(){
     $(this).toggleClass("open");
     var megamenu = $(this).data("menu-name");
     $(megamenu).toggleClass("show");
-    if(!isOpen){
-        $("body").addClass("fixed-bg");
-    }else{
-        $("body").removeClass("fixed-bg");
-    }
+    // if(!isOpen){
+    //     $("body").addClass("fixed-bg");
+    // }else{
+    //     $("body").removeClass("fixed-bg");
+    // }
 });
 
 $(".menu-bg-overlay, .menu-close").click(function () {
