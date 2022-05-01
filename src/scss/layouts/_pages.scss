@@ -1,0 +1,8 @@
+//home page
+.hero-logo{
+    padding: 75px;
+    @include media-breakpoint-down(md) {
+        padding: 60px;
+    }
+}
+// END home page
