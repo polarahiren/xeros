@@ -1,10 +1,34 @@
 @font-face {
-  font-family: 'Avenir LT Std';
-  src: url('../fonts/AvenirLTStd-Roman.eot');
-  src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
-  url('../fonts/AvenirLTStd-Roman.woff') format('woff'),
-  url('../fonts/AvenirLTStd-Roman.ttf') format('truetype');
+  font-family: 'Protokoll';
+  src: url('../fonts/Protokoll-Regular.eot');
+  src: url('../fonts/Protokoll-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Protokoll-Regular.woff2') format('woff2'),
+      url('../fonts/Protokoll-Regular.woff') format('woff'),
+      url('../fonts/Protokoll-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Protokoll';
+  src: url('../fonts/Protokoll-Light.eot');
+  src: url('../fonts/Protokoll-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Protokoll-Light.woff2') format('woff2'),
+      url('../fonts/Protokoll-Light.woff') format('woff'),
+      url('../fonts/Protokoll-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Favorit Mono';
+  src: url('../fonts/ABCFavoritMono-Regular.eot');
+  src: url('../fonts/ABCFavoritMono-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCFavoritMono-Regular.woff2') format('woff2'),
+      url('../fonts/ABCFavoritMono-Regular.woff') format('woff'),
+      url('../fonts/ABCFavoritMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
