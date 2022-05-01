@@ -1,0 +1,45 @@
+
+.newsletter-box{
+    input{
+        color: #84B8CA;
+        background: transparent;
+        border: none;
+
+        &::placeholder{
+            color: #84B8CA;
+        }
+    }
+    .newsletter-submit{
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid transparent;
+
+        &:hover{
+            border-color: $primary;
+        }
+    }
+}
+
+.bottom-footer {
+    border-top: 2px solid $primary;
+
+    .foooter-menu-items{
+        border-bottom: 1px solid transparent;
+        margin-bottom: 5px;
+        display: inline-block;
+
+        &:hover{
+            border-color: $primary;
+        }
+    }
+
+    .social-icon{
+        a{
+            transform: translateY(0px);
+
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
