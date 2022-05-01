@@ -8,7 +8,7 @@
 
 .tabs-slide{
     .tabs-slide-box{
-        width: 100%;
+        width: 80%;
         max-width: 800px;
     }
 
@@ -22,14 +22,21 @@
 
     .slide-sub-menu{
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+
+        &.show{
+            display: flex;
+            justify-content: center;
+        }
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 100%;
+            transform: translateX(-25%);
+            z-index: 1;
+        }
     }
 
-    .tabs-slide-bg {
+    .tabs-slide-bg-img {
         position: absolute;
         top: 0;
         left: 0;
