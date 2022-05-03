@@ -131,4 +131,33 @@
         }
     }
 }
+
+.links-block{
+    padding: 18px 0px;
+    gap: 16px;
+    @include media-breakpoint-down(md) {
+        gap: 12px;
+    }
+}
+
+.links-block-box{
+    width: 33.33%;
+    flex-grow: 1;
+    height: 445px;
+
+    &:hover{
+        img{
+            transform: scale(2.8);
+            transform-origin: bottom center;
+        }
+    }
+    
+    @include media-breakpoint-between(md, lg) {
+        height: 320px;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 420px;
+    }
+}
 // END our story page
