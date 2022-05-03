@@ -27,6 +27,20 @@
     }
 }
 
+.big-headingX{
+    font-size: 80px;
+    line-height: 1.05;
+    
+    @include media-breakpoint-between(md,lg) {
+        font-size: 65px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+}
+
 
 .font-light{
     font-weight: 300;
