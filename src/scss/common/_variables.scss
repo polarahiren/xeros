@@ -28,7 +28,7 @@ $bodyXS: 12px;
 $headingL: 48px;
 $headingM: 38px;
 $headingS: 28px;
-$headingXS: 18px;
+$headingXS: 20px;
 
 $buttonSize: 15px;
 $taglineSize: 12px;
@@ -113,3 +113,8 @@ $zLevelMinus: -1;
   -moz-filter: $filter;
   -o-filter: $filter;
 }
+
+
+///// border radius
+
+$border-radius: 0px !default;

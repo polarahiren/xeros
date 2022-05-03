@@ -2,6 +2,7 @@
 header {
     background-color: #FFFFFF;
     z-index: 99;
+    display: none !important;
   
     @include media-breakpoint-up(xxl) {
         .container {

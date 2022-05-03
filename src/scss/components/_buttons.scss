@@ -1,0 +1,50 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+
+
+.btn{
+    padding: 20px 12px;
+    font-size: $bodyXS;
+    min-width: 182px;
+    border-width: 1px;
+    border-style: solid;
+    transition: 0.4s all ease-in-out;
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    // &:hover{
+    //     color: $white;
+    // }
+}
+
+.btn-white {
+    color: $primary;
+    background-color: $white;
+    border-color: $white;
+
+    &:hover{
+        color: $white;
+        background-color: transparent;
+        border-color: $white;
+    }
+}
+
+.btn-outline-white {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+
+    &:hover{
+        color: $primary;
+        background-color: $white;
+        border-color: $white;
+    }
+}
+

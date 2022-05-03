@@ -65,3 +65,36 @@
     }
 }
 // END home page
+
+
+//our story page
+.hero-section-story{
+    @include media-breakpoint-down(md) {
+        padding-bottom: 100px;
+    }
+    h1{
+        font-size: 65px;
+
+        @include media-breakpoint-down(md) {
+            font-size: 47px;
+        }
+    }
+}
+
+
+.our-story-menu{
+    bottom: 50px;
+
+    a{
+        border-bottom: 1px solid transparent;
+        
+        @include media-breakpoint-down(md) {
+            font-size: $bodyXS;
+        }
+
+        &:hover{
+            border-color: $white;
+        }
+    }
+}
+// END our story page
