@@ -1,29 +1,30 @@
 //home page
-.hero-logo{
+.hero-logo {
     padding: 75px;
+
     @include media-breakpoint-down(md) {
         padding: 60px;
     }
 }
 
-.tabs-slide{
-    .tabs-slide-box{
+.tabs-slide {
+    .tabs-slide-box {
         width: 80%;
         max-width: 800px;
     }
 
-    .sub-menu-title{
+    .sub-menu-title {
         border-bottom: 1px solid transparent;
 
-        &.open{
+        &.open {
             border-color: $white;
         }
     }
 
-    .slide-sub-menu{
+    .slide-sub-menu {
         display: none;
 
-        &.show{
+        &.show {
             display: flex;
             justify-content: center;
         }
@@ -44,35 +45,37 @@
         width: 100%;
         z-index: 0;
 
-        img{
+        img {
             display: none;
 
-            &.show{
+            &.show {
                 display: block;
             }
-        }   
+        }
     }
 
-    .slide-description{
+    .slide-description {
         display: none;
         transform: translateX(-50%);
-        
+
         @include media-breakpoint-up(md) {
-            &.show{
+            &.show {
                 display: block;
             }
         }
     }
 }
+
 // END home page
 
 
 //our story page
-.hero-section-with-content{
+.hero-section-with-content {
     @include media-breakpoint-down(md) {
         padding-bottom: 100px;
     }
-    h1{
+
+    h1 {
         font-size: 65px;
 
         @include media-breakpoint-down(md) {
@@ -82,36 +85,61 @@
 }
 
 
-.hero-section-bottom-box{
+.hero-section-bottom-box {
     bottom: 50px;
 
-    a{
+    a {
         border-bottom: 1px solid transparent;
-        
+
         @include media-breakpoint-down(md) {
             font-size: $bodyXS;
         }
 
-        &:hover{
+        &:hover {
             border-color: $white;
         }
     }
 }
 
-.our-story-img{
+.our-story-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+
+    .our-story-img2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .our-story-img1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .our-story-img3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 }
 
-.story-half-section{
-    img.story-half-section-bg{
+.story-half-section {
+    img.story-half-section-bg {
         @include media-breakpoint-down(md) {
             height: 100vh !important;
         }
     }
 
-    .story-section-img-box{
+    .story-section-img-box {
         width: calc(100% - 48px);
         max-width: 390px;
         max-height: 390px;
@@ -123,35 +151,42 @@
         }
     }
 
-    &.responsive-story-img-bg{
+    &.responsive-story-img-bg {
         @include media-breakpoint-down(md) {
-            img.story-half-section-bg{
+            img.story-half-section-bg {
                 height: 500px !important;
             }
         }
     }
+
+    @include media-breakpoint-between(md, xl) {
+        .text-title {
+            font-size: 32px;
+        }
+    }
 }
 
-.links-block{
+.links-block {
     padding: 18px 0px;
     gap: 16px;
+
     @include media-breakpoint-down(md) {
         gap: 12px;
     }
 }
 
-.links-block-box{
+.links-block-box {
     width: 33.33%;
     flex-grow: 1;
     height: 445px;
 
-    &:hover{
-        img{
+    &:hover {
+        img {
             transform: scale(2.8);
             transform-origin: bottom center;
         }
     }
-    
+
     @include media-breakpoint-between(md, lg) {
         height: 320px;
     }
@@ -160,4 +195,5 @@
         height: 420px;
     }
 }
+
 // END our story page
