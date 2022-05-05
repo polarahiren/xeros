@@ -227,13 +227,28 @@
     }
 }
 
-// years
-.years-map{
-    overflow: auto;
-    @include media-breakpoint-down(md) {
-        &::-webkit-scrollbar {
-            height: 0px;
-        }
+// our journey section
+.our-journey{
+    background-image: url("../images/backgrounds/partners-block-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    overflow-x: auto;
+    user-select: text;
+    cursor: grab;
+    height: 550px;
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+    }
+
+    &::-webkit-scrollbar {
+        height: 0px;
+    }
+}
+
+ .years-map{
+    @include media-breakpoint-up(md) {
+        transform: translateY(50px);
     }
 }
 .year-box{
