@@ -219,4 +219,13 @@ li{
       height: 500px !important;
     }
   }
+
+  .md\:h-420{
+    height: 420px; 
+  }
+
+  .md-only\:text-lg{
+    font-size: $bodyL;
+  }
+
 }

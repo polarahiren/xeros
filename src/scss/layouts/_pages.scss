@@ -35,6 +35,13 @@
             transform: translateX(-25%);
             z-index: 1;
         }
+
+        a{
+            sup{
+                top: -1.5em;
+                margin-left: 5px;
+            }
+        }
     }
 
     .tabs-slide-bg-img {
@@ -200,6 +207,12 @@
 
 // filteration page
 .filteration-product-card{
+    @include media-breakpoint-down(md) {
+         img{
+            height: 420px !important;
+        }
+    }
+
     h2{
         font-size: 118px;
 
@@ -329,3 +342,33 @@
     }
 }
 // END filteration page
+
+// filteration inner page page
+.extra-big-heading{
+    font-size: 200px;
+    line-height: 1;
+
+    @include media-breakpoint-down(md) {
+        font-size: 116px;
+    }
+
+    sup{
+        font-size: 57px;
+        top: -1.8em;
+
+        @include media-breakpoint-down(md) {
+            font-size: 50px;
+            top: -1em;
+        }
+    }
+}
+
+.filteration-detail-hero-slide{
+    @include media-breakpoint-down(md) {
+        h5{
+            font-size: 12px;
+        }
+    }
+}
+// END filteration inner page page
+
