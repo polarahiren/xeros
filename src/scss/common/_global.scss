@@ -195,6 +195,13 @@ li{
 }
 
 
+@include media-breakpoint-up(md) {
+  .text-md-white{
+    color: $white;
+  }
+}
+
+
 @include media-breakpoint-down(md) {
   .container{
     padding-left: 24px;
@@ -221,8 +228,8 @@ li{
     }
   }
 
-  .md\:h-420{
-    height: 420px; 
+  body .md\:h-420{
+    height: 420px !important; 
   }
 
   .md-only\:text-lg{

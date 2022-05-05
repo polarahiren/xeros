@@ -431,3 +431,17 @@
 }
 // END filteration inner page page
 
+
+// care page
+.ifb-launch-section.story-half-section{
+    @include media-breakpoint-up(md) {
+        height: 800px;
+        margin-bottom: 100px !important;
+    }
+    @include media-breakpoint-down(md) {
+        &.story-half-section img.story-half-section-bg{
+            height: 450px !important;
+        }
+    }
+}
+// END care page
