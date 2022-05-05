@@ -41,70 +41,11 @@
 }
 
 
-
-.story-card{
-    @include media-breakpoint-up(lg) {
-        margin-bottom: -20px;
-    }
-
-    .card-img{
-        height: 300px;
-        overflow: hidden;
-        border-radius: 0px;
-        @include media-breakpoint-up(md) {
-            height: 350px;
-        }
-        @include media-breakpoint-up(lg) {
-            height: 450px;
-        }
-    }
-    .story-body {
-        @include media-breakpoint-up(md) {
-            padding-left: 20px;
-            padding-right: 20px;
-            box-shadow: 0 0 36px rgb(113 113 113 / 10%);
-        }
-        @include media-breakpoint-up(lg) {
-            padding-left: 35px;
-            padding-right: 35px;
-            transform: translateY(-100px);
-        }
-
-        h3{
-            font-weight: normal;
-            -webkit-box-orient: vertical;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: normal;
-        }
-        a{
-            font-size: 16px;
-        }
-    }
-}
-
-.insight-img,
-.product-card-img{
-    height: 400px;
-    overflow: hidden;
-    @include media-breakpoint-down(lg) {
-        height: 300px;
-    }
-}
-
-/* insights card */
-.insights-body{
-    h3{
-        font-size: 22px;
-        @include media-breakpoint-down(lg) {
-            font-size: 18px;
-        }
+.news-card{
+    .news-card-img{
+        height: 340px;
     }
     .read-more{
-        font-size: 16px;
-        text-decoration: underline;
+        font-size: 22px;
     }
 }
-/* END insights card */

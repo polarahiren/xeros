@@ -36,12 +36,9 @@ $(function () {
 // ===========================================================================
 
 // Select2 JS
-$(document).ready(function() {
-    $('.select-dropdown').select2();
-    $('.product-option, .disable-search').select2({
-            minimumResultsForSearch: -1
-    });
-});
+// $(document).ready(function() {
+//     $('.select-dropdown').select2();
+// });
 
 
 // fancy box

@@ -52,6 +52,52 @@ export class App{
       ]
   });
 
+  /* related products slider */
+  $('.news-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      speed: 400,
+      autoplay: false,
+      slidesToShow: 5,
+      slidesToScroll: 2,
+      responsive: [
+            {
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                }
+            },
+          {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3,
+                  arrows: false,
+              }
+          },
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+              }
+          },
+          {
+              breakpoint: 640,
+              settings: {
+                  slidesToShow: 1,
+              }
+          }
+      ]
+  });
+
 
 
   }
