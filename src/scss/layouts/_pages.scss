@@ -387,5 +387,35 @@
 
     }
 }
+
+.filteration-inner-img-block{
+    @include media-breakpoint-up(md) {
+        height: 670px;
+    }
+
+    .filteration-inner-img-box{
+        max-width: 280px;
+        max-height: 280px;
+        width: 80%;
+        height: 80%;
+        right: 0px;
+        transform: translateY(-50%) translateX(40%);
+
+        @include media-breakpoint-down(md) {
+            max-width: 210px;
+            max-height: 210px;
+            transform: translateY(-28%);
+            top: 100% !important;
+        }
+    }
+    .inner-small-img img{
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            max-width: 350px;
+        }
+    }
+
+}
 // END filteration inner page page
 
