@@ -217,3 +217,81 @@ select.form-control{
 }
 
 
+
+
+// filter tab nav
+.filter-tab-btn{
+    font-size: 16px;
+    padding: 2px 0px;
+    color: $white;
+    display: block;
+    transition: 0.4s all ease-in-out;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent;
+
+    &.active,
+    &:hover{
+        border-color: $white;
+        color: $white;
+    }
+}
+
+
+.faqs-accordian{
+    margin-left: -24px;
+    margin-right: -24px;
+
+    .accordion-button,
+    .accordion-item{
+        background-color: transparent;
+        color: $white;
+    }
+
+    .accordion-button{
+        font-size: 32px;
+        font-weight: 300;
+        padding: 25px 100px 25px 24px;
+
+        &:after{
+            background-image: url("../images/icons/down-caret.svg");
+            width: 50px;
+            height: 50px;
+            background-size: 100%;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: 25px;
+            bottom: 0px;
+            margin: auto;
+            z-index: 1;
+
+            @include media-breakpoint-down(md) {
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 24px;
+            padding-right: 60px;
+        }
+    }
+    
+    .accordion-item{
+        border-width: 0px 0px 2px 0px;
+        border-color: $white;
+        margin-bottom: 50px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .accordion-body{
+        padding: 25px 24px;
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+            padding: 0px 24px 10px;
+        }
+    }
+}
