@@ -121,20 +121,36 @@ p.error-message {
 
 
 /* input form css */
-.form-control{
-    background: $white;
-    line-height: 2;
-    border: 1px solid transparent;
-    font-size: 15px;
-    padding: 10px 1.5rem;
-
-    &::placeholder{
-        color: #141414;
-    }
+.form-control {
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+    border-color: $info;
+    border-radius: 0px !important;
+    color: $white;
+    padding: 12px 0px;
+    font-size: 16px;
+    font-family: "ABC Favorit Mono";
+    -webkit-appearance: none;
+    resize: none;
 
     &:focus{
+        background: transparent;
+        border-color: $info;
+        color: $white;
         box-shadow: none;
     }
+
+    &::placeholder{
+        color: $white;
+    }
+}
+
+textarea.form-control{
+    border-width: 1px;
+    padding: 12px;
+}
+select.form-control{
+    cursor: pointer;
 }
 
 /* END input form css */
@@ -199,3 +215,5 @@ p.error-message {
         margin-left: 0;
     }
 }
+
+
