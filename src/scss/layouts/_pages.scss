@@ -525,6 +525,21 @@
     padding-top: 150px;
     padding-bottom: 150px;
 
+    @include media-breakpoint-down(md) {
+        padding-bottom: 120px;
+
+        &:before{
+            content: "";
+            width: 100%;
+            height: 41%;
+            background: $black;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: 0;
+        }
+    }
+
     .contact-us-content{
         max-width: 960px;
         width: 100%;
@@ -550,5 +565,9 @@
     @include media-breakpoint-down(md) {
         grid-column: span 1 / span 1;
     }
+}
+
+.contact-address{
+    padding-top: 150px;
 }
 // END contact us page
