@@ -493,3 +493,18 @@
     }
 }
 // END finish
+
+// finish detail page
+.large-big-heading{
+    font-size: 160px;
+
+    @include media-breakpoint-between(md, xl) {
+        font-size: 110px;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+// END Finish Detail page
