@@ -568,20 +568,20 @@
 }
 
 .contact-address{
-    padding-top: 150px;
+    padding-top: 200px;
 }
 // END contact us page
 
 
 // faqs page
 .faqs-section{
-    padding-top: 150px;
+    padding-top: 230px;
     padding-bottom: 150px;
 
     @include media-breakpoint-down(md) {
         padding-bottom: 120px;
     }
-    
+
     .max-w-screen-md{
         max-width: 700px;
     }

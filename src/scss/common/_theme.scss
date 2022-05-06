@@ -295,3 +295,9 @@ select.form-control{
         }
     }
 }
+
+.scroll-0{
+    &::-webkit-scrollbar {
+        height: 0px;
+    }
+}
