@@ -236,6 +236,11 @@ li{
     font-size: $bodyL;
   }
 
+
+  .md-only\:text-2xl{
+    font-size: 28px !important;
+  }
+
   .care-detail-hero-slide.hero-section-with-content{
     padding-bottom: 0px;
   }
