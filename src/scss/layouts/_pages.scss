@@ -445,3 +445,51 @@
     }
 }
 // END care page
+
+// finish
+.col-3-card{
+    gap: 15px;
+
+    .col-3-card-box {
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        gap: 20px;
+
+        .filteration-product-card{
+            height: 450px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .filteration-product-card{
+            h2{
+                font-size: 75px;
+            }
+            sup{
+                font-size: 35px;
+            }
+
+            p{
+                font-size: 28px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .filteration-product-card{
+            h2{
+                font-size: 60px;
+            }
+            sup{
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+}
+// END finish
