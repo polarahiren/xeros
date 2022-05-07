@@ -633,4 +633,22 @@
         }
     }
 }
+
+.news-category-nav{
+    .filter-tab-btn{
+        font-size: 30px;
+        border-bottom: 1px solid transparent;
+        font-weight: 300;
+        white-space: nowrap;
+
+        @include media-breakpoint-down(md) {
+            font-size: 22px;
+        }
+
+        &:hover,
+        &.active{
+            border-color: $primary;
+        }
+    }
+}
 // END journal page
