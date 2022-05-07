@@ -701,4 +701,31 @@
         z-index: 10;
     }
 }
+
+.news-detail-half-section{
+    @include media-breakpoint-up(md) {
+        height: 700px;
+    }
+
+    @include media-breakpoint-down(md) {
+        img.story-half-section-bg{
+            height: 420px !important;
+        }
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}
+
+.social-share{
+    a{
+        padding: 5px 14px;
+        transform: translateY(0px);
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
 // END journal detail page
