@@ -651,4 +651,32 @@
         }
     }
 }
+.newsletter-section {
+    background-image: url("../images/backgrounds/news-letter-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    form{
+        max-width: 700px;
+    }
+
+    input[type="email"]{
+        padding: 20px 18px;
+        background: rgb(255 255 255 / 25%);
+        border: 1px solid transparent;
+        color: $white;
+        line-height: 1.2;
+        width: 100%;
+        margin-right: 20px;
+
+        &::placeholder{
+            color: $white;
+        }
+        &:focus{
+            border-color: $white;
+        }
+    }
+
+}
 // END journal page
