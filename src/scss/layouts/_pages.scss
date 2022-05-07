@@ -848,4 +848,66 @@
 .dwonload-item {
     border-bottom: 1px solid rgb(5 22 99 / 25%);
 }
+
+.reports-tabs-section{
+    .nav-tabs{
+        border-color: transparent;
+        @include media-breakpoint-up(md) {
+            flex-direction: column;
+        }
+    }
+    .nav-item{ 
+        @include media-breakpoint-up(md) {
+            margin-bottom: 35px;
+        }
+
+        button{
+            font-size: 40px;
+            color: $primary;
+            font-weight: 300;
+            padding: 0px;
+            border-width: 0px 0px 2px 0px;
+            border-color: transparent;
+            line-height: 1;
+            position: relative;
+
+            &.active{
+                color: $primary;
+                border-color: $primary;
+            }
+
+            @include media-breakpoint-up(md) {
+                &.active:after{
+                    content: "";
+                    width: 32px;
+                    height: 32px;
+                    display: block;
+                    background: url("../images/icons/down-arrow.svg");
+                    position: absolute;
+                    left: calc(100% + 10px);
+                    top: 0px;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .reports-tabs-section{
+        ul.nav-tabs{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        .nav-link{
+            font-size: 21px !important;
+            margin-right: 30px;
+            font-weight: 500 !important;
+            font-family: "ABC Favorit Mono";
+        }
+    }
+}
 // END financial update page
