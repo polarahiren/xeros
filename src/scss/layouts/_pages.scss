@@ -728,4 +728,15 @@
         }
     }
 }
+
 // END journal detail page
+@include media-breakpoint-down(md) {
+    .read-next-btn{
+        font-size: 24px;
+
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
