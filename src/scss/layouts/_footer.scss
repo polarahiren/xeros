@@ -44,7 +44,8 @@
         margin-bottom: 5px;
         display: inline-block;
 
-        &:hover{
+        &:hover,
+        &.active{
             border-color: $primary;
         }
     }
