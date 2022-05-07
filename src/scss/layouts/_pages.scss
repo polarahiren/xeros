@@ -752,3 +752,58 @@
     }
 }
 // END investor
+
+// sticky menu
+.sticky-menu{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;   
+    left: 0%;
+    z-index: 99;
+    box-shadow: 0px 10px 36px rgb(0 0 0 / 20%);
+
+    li a{
+        white-space: nowrap;
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+        }
+
+        &.active:before{
+            content: "";
+            width: calc(100% - 48px);
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 24px;
+            z-index: 9;
+            background: $primary;
+        }
+    }
+}
+
+.sticky-menu-list{
+    @include media-breakpoint-down(md) {
+        display: none;
+
+        &.show{
+            display: flex;
+            padding-bottom: 0px !important;
+        }
+    }
+}
+.menu-trigger{
+    svg{
+        transition: 0.2s all ease-in-out;
+    }
+
+    &.show{ 
+        svg{
+            transition: 0.2s all ease-in-out;
+            transform: rotate(180deg);
+        }   
+    }
+}
+// END sticky menu
