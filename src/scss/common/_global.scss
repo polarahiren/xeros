@@ -261,4 +261,8 @@ li{
   .whitespace-nowrap{
     white-space: nowrap;
   }
+
+  .md-only\:text-title{
+    font-size: 40px !important;
+  }
 }
