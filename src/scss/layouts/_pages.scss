@@ -780,6 +780,10 @@
             left: 24px;
             z-index: 9;
             background: $primary;
+
+            @include media-breakpoint-up(md) {
+                height: 1px;
+            }
         }
     }
 }
@@ -804,6 +808,38 @@
             transition: 0.2s all ease-in-out;
             transform: rotate(180deg);
         }   
+    }
+}
+
+.investor-hero-section{
+    .big-headingX{
+        @include media-breakpoint-down(md) {
+            font-size: 58px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.regulatory-news-table{
+    .pdf-icon{
+        max-width: 24px;
+        display: block;
+    }   
+    .border-b{
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-color: $primary;
+        }
+    }
+
+    table{
+        td{
+            white-space: nowrap;
+        }
+    }
+
+    .table > :not(:first-child){
+        border-top-width: 0px;
     }
 }
 // END sticky menu
