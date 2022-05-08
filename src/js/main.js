@@ -77,6 +77,20 @@ $( ".fake-header" ).css( "height", p.innerHeight() );
 //     }
 // });
 
+// megamnu script
+$(".humburger-icon").click(function () {
+    $(".megamenu-drawer").addClass("show");
+    $("body").addClass("fixed-bg");
+    $(".humburger-icon").addClass("open");
+});
+
+// megamnu script
+$(".close-trigger").click(function () {
+    $(".megamenu-drawer").removeClass("show");
+    $("body").removeClass("fixed-bg");
+    $(".humburger-icon").removeClass("open");
+});
+
 
 
 //toggle class event

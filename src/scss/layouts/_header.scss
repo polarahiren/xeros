@@ -1,7 +1,11 @@
+body.fixed-bg{
+    position: fixed;
+}
+
 header{
     .humburger-icon{
         left: 30px;
-        top: 50px;
+        top: 35px;
         z-index: 99;
     }
 }
@@ -15,6 +19,11 @@ header{
     width: 100%;
     padding: 100px 150px;
     overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    transform: scaleX(90%);
+    transform-origin: center left;
     
     @include media-breakpoint-down(md) {
         padding: 100px 35px;
@@ -23,6 +32,12 @@ header{
 
     @include media-breakpoint-between(md, lg) {
         padding: 100px 35px;
+    }
+
+    &.show{
+        transform: scaleX(100%);
+        visibility: visible;
+        opacity: 1;
     }
 
     .megamenu-item,
