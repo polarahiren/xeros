@@ -302,3 +302,9 @@ select.form-control{
         height: 0px;
     }
 }
+
+.sticky-slide-top{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
