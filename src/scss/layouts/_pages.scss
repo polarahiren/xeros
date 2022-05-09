@@ -184,9 +184,11 @@
     height: 445px;
 
     &:hover {
-        img {
-            transform: scale(2.8);
-            transform-origin: bottom center;
+        @include media-breakpoint-up(md) {
+            img {
+                transform: scale(2.8);
+                transform-origin: bottom center;
+            }
         }
     }
 

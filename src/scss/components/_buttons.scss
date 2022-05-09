@@ -48,3 +48,22 @@ button,
     }
 }
 
+
+@include media-breakpoint-down(md) {
+    .btn-outline-white {
+        color: $white !important;
+        background-color: transparent !important;
+        border-color: $white !important;
+    }   
+    .btn-white {
+        color: $primary !important;
+        background-color: $white !important;
+        border-color: $white !important;
+    }
+    .btn-outline-primary{
+        color: $primary !important;
+        background-color: transparent !important;
+        border-color: $primary !important;
+    }
+        
+}
