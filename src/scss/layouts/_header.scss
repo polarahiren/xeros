@@ -4,6 +4,8 @@ body.fixed-bg{
 }
 
 header{
+    z-index: 999;
+
     .navbar-brand{
         transition: 0.3s all ease-in-out;
         padding: 10px 0px;
@@ -12,7 +14,7 @@ header{
     .humburger-icon{
         left: 30px;
         top: 35px;
-        z-index: 99;
+        z-index: 101;
     }
 
     > .position-absolute{
@@ -36,7 +38,7 @@ header{
     background-color: $light;
     left: 0px;
     top: 0px;
-    z-index: 999;
+    z-index: 1001;
     max-width: 80%;
     width: 100%;
     padding: 100px 150px;

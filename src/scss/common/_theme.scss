@@ -225,9 +225,9 @@ select.form-control{
 
 
 // filter tab nav
-.faqs-nav.filter-tab-btn{
+.faqs-nav .filter-tab-btn{
     font-size: 16px;
-    padding: 2px 0px;
+    padding: 0px;
     color: $white;
     display: block;
     transition: 0.4s all ease-in-out;
