@@ -151,7 +151,11 @@ textarea.form-control{
     padding: 12px;
 }
 select.form-control{
+    position: relative;
     cursor: pointer;
+    background-image: url("../images/icons/input-arrow.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
 }
 
 /* END input form css */
