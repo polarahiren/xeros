@@ -70,7 +70,7 @@ export class App{
                 }
             },
             {
-                breakpoint: 1400,
+                breakpoint: 1600,
                 settings: {
                     slidesToShow: 3,
                     arrows: false,

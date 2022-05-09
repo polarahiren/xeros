@@ -11795,7 +11795,7 @@ var App = /*#__PURE__*/function () {
             arrows: false
           }
         }, {
-          breakpoint: 1400,
+          breakpoint: 1600,
           settings: {
             slidesToShow: 3,
             arrows: false
