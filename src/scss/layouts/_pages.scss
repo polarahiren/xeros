@@ -95,17 +95,13 @@
 .hero-section-bottom-box {
     bottom: 50px;
 
-    a {
-        border-bottom: 1px solid transparent;
+    // a {
+    //     border-bottom: 1px solid transparent;
 
-        @include media-breakpoint-down(md) {
-            font-size: $bodyXS;
-        }
-
-        &:hover {
-            border-color: $white;
-        }
-    }
+    //     @include media-breakpoint-down(md) {
+    //         font-size: $bodyXS;
+    //     }
+    // }
 }
 
 .our-story-img {
