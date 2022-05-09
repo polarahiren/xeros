@@ -4,6 +4,11 @@ body.fixed-bg{
 }
 
 header{
+    .navbar-brand{
+        transition: 0.3s all ease-in-out;
+        padding: 10px 0px;
+    }
+
     .humburger-icon{
         left: 30px;
         top: 35px;
@@ -19,7 +24,12 @@ header{
             margin-right: 30px !important;
         }
     }
+
+    &.header-fixed .navbar-brand{
+        background: $primary;
+    }
 }
+
 
 
 .megamenu-drawer{
