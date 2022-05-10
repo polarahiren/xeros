@@ -122,6 +122,19 @@ p.error-message {
 
 
 /* input form css */
+textarea,
+input,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="search"]
+input[type="email"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px;
+}
+
 .form-control {
     background: transparent;
     border-width: 0px 0px 1px 0px;
