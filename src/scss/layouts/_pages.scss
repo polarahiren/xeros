@@ -918,6 +918,7 @@
             display: flex;
             flex-wrap: nowrap;
             overflow: auto;
+            padding: 6px 0px;
         }
 
         .nav-link{
@@ -936,6 +937,7 @@
     .nav-tabs{
         border: none;
         flex-wrap: nowrap;
+        padding: 6px 0px;
         @include media-breakpoint-up(md) {
             flex-direction: column;
         }
